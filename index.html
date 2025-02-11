@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .box {
+        /* we need this to position the pseudo-element */
+        position: relative;
+        /* left: -12px;
+      
+        /* set a fixed size */
+        /* width: 6rem; height: 6rem; */
+      
+        /* this is just to style the content */
+        padding: 6px;
+        color: white;
+        text-align: right;
+        width: 100%;
+        height: 100%;
+        }
+      
+      .box:before {
+        /* we need this to create the pseudo-element */
+        content: "";
+        display: block;
+      
+        /* position the triangle in the top right corner */
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 40%;
+        width: 100%;
+        height: 100%;
+        /* create the triangle */
+        /* width: 0;
+        height: 0; */
+        border: 250px solid transparent;
+        border-top-color: green;
+        border-right-color: green;
+        }
+      
+      .content {
+        /* position the content above the triangle */
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 150px;
+        }
+      
+        .background{
+          background-color: lightgreen;
+          /* width: 6em; height: 6em; */
+        }
+          </style>
+</head>
+<body class="w-100% z-2">
+    <div class="flex flex-col lg:flex-row">
+
+        <div class="bg-[#2FCB7E]">
+            
+            
+            <main class="">
+                <nav class="border-white border-10 w-[100%] flex justify-center items-center flex-col">
+                    <div class="flex flex-col md:flex-row justify-center items-center">
+                        <img src="Montgomery Mcdonald.png" alt="" class="w-40">
+                    </div>
+                    <div class="flex flex-row justify-between p-5 w-[100%]">
+                        <a href="#" class="p-5 bg-[#CB792F] text-white">Recent Projects</a>
+                        <a href="#" class="p-5 bg-[#CB792F] text-white">All Projects</a>
+                        <a href="#" class="p-5 bg-[#CB792F] text-white">Contact Page</a>
+                        <a href="#" class="p-5 bg-[#CB792F] text-white">Github</a>
+                    </div>
+                </nav>
+                <div id="carousel" class="p-10 flex" width="100%">
+                    <img src="SuperShredders.png" alt="" class="object-fit md:w-[95%]" id="carousel-img">
+                </div>
+                <div class="background overflow-hidden flex flex-row justify-between">
+                    <div class="box">
+                        <div class="content flex justify-evenly items-center">
+                            <a href="https://github.com/MontgomeryMcdonald"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                            <a href="mailto:halfbloodhero1027@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                                
+                                <a href=""><i class="fa fa-question fa-3x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                            </i></a>
+                        </div>
+                </main>
+            </div>
+            <aside class=" bg-[#792FCB] lg:order-first lg:w-[30%] flex flex-col justify-center items-center pt-5 lg:justify-normal">
+                <div class="flex lg:flex-col">
+                    <img src="Selfie.jpg" alt="" class="rounded-full p-2 h-[250px] lg:h-auto">
+                    <p class="text-lg text-white p-2">Montgomery Mcdonald is a 16 Year Old Frontend Web Developer, with experience using Tailwind, JQuery and SCSS.</p>
+                </div>
+                <a href="#" class="p-5 m-5 bg-[#CB792F] text-white">Check out my Websites here!</a>
+                </aside>
+            </div>
+                <footer class="bg-[#CB792F] p5-5 flex flex-col items-center text-white">
+                    MIT License, Made by Montgomery Mcdonald
+                    <a href="#" class="text-white">Repository Link</a>
+                    <a href="#" class="text-white">LinkedIn</a>
+                </footer>
+            </body>
+            </html>
